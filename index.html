@@ -1,0 +1,55 @@
+<!-- Project made by Parvej Hussain -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Alarm Clock - Project
+        </title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="script.js" defer></script>
+        <script src="https://kit.fontawesome.com/032aba0b09.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <div id="clock-container">
+        <h2>
+            <i class="fa-solid fa-bell"></i>
+            Alarm Clock
+            <i class="fa-solid fa-bell"></i>
+        </h2>
+        <div id="time-display">
+            <span id="time-d"></span>
+            <!-- <span id="hours">00</span> :
+            <span id="minutes">00</span> : 
+            <span id="seconds">00</span>
+            <span id="ampm">AM</span> -->
+        </div>
+
+        <!-- Contains the options to set the Alarm -->
+        <div id="set-alarm-container">
+            <select name="hours" id="hourSelector">
+                <option value="" selected disabled>Hours</option>
+            </select>
+            <select name="minutes" id="minuteSelector">
+                <option value="" selected disabled>Minutes</option>
+            </select>
+            <select name="ampm" id="ampmSelector">
+                <option value="" selected disabled>AM/PM</option>
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+        </div>
+        
+        <div id="button-container">
+            <button id="setAlarm" class="set-button"> Set Alarm </button>
+        </div>
+        
+        <!-- Message Display -->
+        <div id="alarm-display">
+            <h3 id="alarm">Alarm is set for 00:00:00</h3>
+        </div>
+        
+    </div>
+</body>
+</html>
